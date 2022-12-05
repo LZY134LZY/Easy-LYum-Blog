@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎进入LawYum的个人网页！</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!-- 进入浏览器选择极速内核Edge -->
+    <link rel="charset icon" href="LawYum.ico">
+    <!-- 引入icon图标 -->
+    <link rel="stylesheet" href="css/Banner.css">
+    <!-- 引入头部导航样式 -->
+    <link rel="stylesheet" href="css/Right.css">
+    <!-- 引入右边模块 -->
+    <link rel="stylesheet" href="Css/Left.css">
+    <!-- 引入左边模块 -->
+    <link rel="stylesheet" href="Css/Smo-Mk/Game-Left.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(20deg, #70f7fe, rgb(255, 187, 221), #b6d5ff);
+        }
+
+        header {
+            /* position: fixed; */
+            top: 0;
+            position: absolute;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 100px;
+            z-index: 10;
+            /* background-color: violet; */
+            background-color: transparent;
+        }
+
+        header .logo {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            transition: 0.6s;
+        }
+
+        header .logo:hover {
+            transform: rotateZ(360deg);
+        }
+
+        header .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+
+        }
+
+        header .nav li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        header .nav li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: 0.2s;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+
+        header .nav li a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 7px;
+            box-shadow: rgb(46, 46, 46) 1px 3px 10px 0.2px;
+        }
+
+        @media screen and (max-width:991px) {
+            header {
+                padding: 10px 20px;
+                flex-direction: column;
+            }
+        }
+
+        /* ↓主页介绍模块CSS */
+        .Gent {
+            display: flex;
+            min-width: 20%;
+            max-width: 900px;
+            min-height: 1400px;
+            height: 60vw;
+            /* background-color: chartreuse; */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+            justify-content: space-between;
+
+        }
+
+
+        /*  */
+        div ul {
+            position: absolute;
+            top: 30px;
+            display: none;
+        }
+
+
+        div li {
+            position: relative;
+            text-align: center;
+            width: 90px;
+            height: 30px;
+        }
+    </style>
+    <script src="js/850.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="Counter Strike" class="logo"><img src="LawYum.ico" alt="" width="65px" height="65px"></a>
+        <div class="nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="javascript:;">内容</a>
+                <ul>
+                    <li><a href="Label.html">标签</a></li>
+                    <li><a href="Article.html">文章</a></li>
+                </ul>
+            </li>
+            <li style="width: 60px;height:20px"><a href="javascript:;">生活</a>
+                <ul>
+                    <li><a href="Game.html">游戏人生<a></li>
+                    <li><a href="#" onclick="alert('暂未开放')">朋友圈</a></li>
+                </ul>
+            </li>
+        </div>
+        <script>
+            var div = document.querySelector('div');
+            var lis = div.children;
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].onmouseover = function () {
+                    this.children[1].style.display = 'block';
+                }
+                lis[i].onmouseout = function () {
+                    this.children[1].style.display = 'none';
+                }
+            }
+
+        </script>
+    </header>
+    <!-- /导航 -->
+
+    <div class="Gent site" id="top">
+        <div class="left">
+            <div id="Nagame">
+                <article id="Game">
+                    <script language="javascript">
+                        function Counter() {
+                            if (confirm("您确认要跳转至CSGO官网吗？")) {
+                                window.location.href = "http://blog.counter-strike.net/";
+                            }
+                        }
+                    </script>
+                    <a href="javascript:;"><img src="Img/CSGO.png" alt="" class="CSGO Iamg" onclick="Counter()"></a>
+                    <h4><a href="http://blog.counter-strike.net/">Counter-Strike：Global Offensive</a></h4>
+                    <p class="time">游玩日期:2019-3-14| 推荐度★★★★☆</p>
+                    <p class="Note">
+                        《反恐精英：全球攻势》包含全新地图，角色与武器，同时将向经典CS发布升级。另外，游戏还引入全新的游戏模式，竞技配对系统，排行榜等···
+                    </p>
+                </article>
+                <article id="Game-two">
+                    <script language="javascript">
+                        function QQsped() {
+                            if (confirm("您确认要跳转至QQ飞车官网吗？")) {
+                                window.location.href = "http://speed.qq.com/";
+                            }
+                        }
+                    </script>
+                    <a href="javascript:;"><img src="Img/QQ-speed.png" alt="" class="QQspeed Iamg"
+                            onclick="QQsped()"></a>
+                    <h4><a href="http://speed.qq.com/">QQ飞车</a></h4>
+                    <p class="time">游玩日期:2016-10-7 | 推荐度★★★★☆</p>
+                    <p class="Note">
+                        在一个美景如梦幻般的大陆上，有疾风、流火、幻想三个飞车王国，三个国家的所有臣民都是赛车手。在这个大陆上，赛车水平越强，就能得到越多人的尊敬，赛车水平最强的人，会被大家推举为国王···</p>
+                </article>
+                <div class="buttom">上一页 | 下一页 首页</div>
+            </div>
+        </div>
+        <div class="right" id="right">
+            <article id="name">
+                <img src="Img/m0NESY.jpg" alt="" class="shady" width="70px" height="78px">
+                <h3 class="name_JS">记录学习、生活和有趣的事</h3>
+                <article><a href="https://im.qq.com/index"><img src="Img/QQ.png" alt="" title="QQ"></a></article>
+                <article><a href="https://wx.qq.com/"><img src="Img/wechat.png" alt="" title="Wechat"></a></article>
+                <article><a href="https://zh-tw.facebook.com"><img src="Img/webo.png" alt="" title="weibo"></a>
+                </article>
+                <article><a href="https://github.com"><img src="Img/Github.png" alt="" title="Github"></a></article>
+            </article>
+            <article id="Cloud">
+                <p class="NIc" id="LoveK">
+                    <a href="https://zhuanlan.zhihu.com/p/119300421" target="_blank"
+                        style="text-decoration: none;color: blue; ">生命是独立是自由是爱与和平</a>
+                </p>
+                <script>
+                    var p = document.getElementById('LoveK');
+                    LoveK.onmouseover = function () {
+                        this.className = 'NIc Love';
+                    };
+                    LoveK.onmouseout = function () {
+                        this.className = 'NIc';
+                    }
+                </script>
+                <div class=" Rain">
+
+                    <div class="s-Rain">
+                        <span style="--speed:11"></span>
+                        <span style="--speed:12"></span>
+                        <span style="--speed:18"></span>
+                        <span style="--speed:16"></span>
+                        <span style="--speed:20"></span>
+                        <span style="--speed:11"></span>
+                        <span style="--speed:14"></span>
+                        <span style="--speed:17"></span>
+                        <span style="--speed:18"></span>
+                        <span style="--speed:12"></span>
+                        <span style="--speed:14"></span>
+                        <span style="--speed:19"></span>
+                        <span style="--speed:15"></span>
+                    </div>
+                </div>
+            </article>
+            <article id="Notice">
+                <h2>公告：</h2>
+                <p class="Notice_p2">去读书，去学习；</p>
+                <p class="Notice_p2">去看遍山川河流</p>
+                <p class="Notice_p2"></p>
+            </article>
+            <article id="Label">
+                <h2>标签：</h2>
+                <div class="Game">
+                    <p class="Label_sbox"><a href="javascript:;" class="Label_box"
+                            style="background-color: rgb(40, 183, 255);color: white;" id="" title="HTML">HTML</a>
+                        <a href="javascript:;" class="Label_box"
+                            style="background-color: rgb(40, 183, 255);color: white;" id=""
+                            title="JavaScript">Jscript</a>
+                    </p>
+                    <p class="Label_sbox"><a href="javascript:;" class="Label_box"
+                            style="background-color: rgb(40, 183, 255);color: white;" id="" title="Css">CSS</a>
+                        <a href="javascript:;" class="Label_box"
+                            style="background-color: rgb(255, 40, 155); color: white;" title="Java" id="">Java</a>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>
