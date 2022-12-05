@@ -1,0 +1,140 @@
+/* body大盒子最大限高2500像素 */
+/* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+背景Start 
+
+body {
+    background-image: linear-gradient(20deg, #70f7fe, rgb(255, 187, 221), #b6d5ff);
+}
+
+/背景End 
+
+.banner .banner_Box {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    background-color: #b6d5ff;
+    margin-left: -600px;
+}
+
+.banner_Box .I-con img {
+    margin-left: 20px;
+    transition: 0.6s;
+}
+
+.banner_Box .I-con img:hover {
+    transform: rotateZ(360deg);
+}
+
+.banner_Box #OOEK {
+    height: 100%;
+    width: 100px;
+    float: right;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    transition: 0.4s;
+    color: white;
+}
+
+.banner_Box #OOEK:hover {
+    background-color: rgba(0, 0, 0, 0.382);
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(20deg, #70f7fe, rgb(255, 187, 221), #b6d5ff);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    /* position: absolute; */
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 100px;
+    z-index: 10;
+    /* background-color: violet; */
+    background-color: transparent;
+}
+
+header .logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+header .logo:hover {
+    transform: rotateZ(360deg);
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+}
+
+header .nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+header .nav li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 20px;
+    padding: 7px;
+    box-shadow: rgb(46, 46, 46) 1px 3px 10px 0.2px;
+}
+
+@media screen and (max-width:991px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+}
+
+/* ↓主页介绍模块CSS */
+.Gent {
+    display: flex;
+    min-width: 20%;
+    max-width: 900px;
+    min-height: 1400px;
+    height: 60vw;
+    /* background-color: chartreuse; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+
+}
