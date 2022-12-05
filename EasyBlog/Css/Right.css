@@ -1,0 +1,227 @@
+/* Right on! */
+
+.right {
+    width: 30%;
+    margin: 10px;
+    /* background-color: royalblue; */
+}
+
+.right #name {
+    width: 100%;
+    height: 260px;
+    background-color: white;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 2px 0.6px 25px -10px black;
+}
+
+.right #name img {
+    border-radius: 40px;
+    clear: both;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+}
+
+.right #name .shady:hover {
+    transform: rotateY(360deg);
+}
+
+#name .name_JS {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.4s;
+    background-image: -webkit-linear-gradient(left, #0ef45e, #865eff, rgb(255, 143, 199)25%, #589eff 50%, #865eff 75%, #0ef45e, #e0ead1, #0ef45e, #589eff 50%, rgb(255, 143, 199)25%, #865eff, #0ef45e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: Animation 2s infinite linear;
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+#name article a {
+    float: left;
+    margin-top: 50px;
+    margin-left: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#name article a:hover {
+    animation: Noam 800ms ease-in-out;
+}
+
+@keyframes Noam {
+
+    10%,
+    90% {
+        transform: translate3d(+1px, -2px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(+2px, -1px, 0);
+    }
+
+    30%,
+    70% {
+        transform: translate3d(-2px, -2px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(+1px, 1px, 0);
+    }
+
+    50% {
+        transform: translate3d(-1px, 2px, 0);
+    }
+}
+
+.right #Cloud {
+    width: 100%;
+    margin: auto;
+    height: 225px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 2px 0.6px 25px -10px black;
+}
+
+/* ! Cloud */
+
+
+.Rain {
+    position: relative;
+    top: 80px;
+    left: 25%;
+    right: 25%;
+    width: 120px;
+    height: 30px;
+    /* margin: 50px auto; */
+    background-color: rgb(201, 201, 201);
+    border-radius: 100px;
+
+}
+
+.Rain::before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -24px;
+    left: 16px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 50%;
+    box-shadow: 30px 0 0 20px rgb(201, 201, 201);
+}
+
+.s-Rain {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.s-Rain span {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    background: rgb(201, 201, 201);
+    margin: 10px 3px;
+    border-radius: 50%;
+    animation: Rain 3s linear infinite;
+    animation-duration: calc(15s/var(--speed));
+    transform-origin: bottom;
+}
+
+#Cloud .NIc {
+    text-align: center;
+    color: rgb(54, 102, 249);
+    font-size: 16px;
+    border-bottom: 2px dashed blue;
+    transition: 1s;
+}
+
+@keyframes Rain {
+    0% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(100px) scale(1);
+    }
+
+    100% {
+        transform: translateY(100px) scale(0);
+    }
+}
+
+.right #Notice {
+    width: 100%;
+    height: 180px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 0.6px 25px -10px black;
+}
+
+#Label h2,
+#Notice h2 {
+    color: #000000;
+    font-size: 22px;
+    text-indent: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed blue;
+}
+
+#Notice .Notice_p2 {
+    font-size: 19px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.right #Label {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 0.6px 25px -10px black;
+}
+
+.right #Label .Label_sbox {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.right #Label .Label_box {
+    padding: 3px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.Love {
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.Boxx1 {
+    background-color: red;
+}

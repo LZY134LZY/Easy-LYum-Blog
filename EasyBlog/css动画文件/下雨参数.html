@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下雨</title>
+    <style>
+        body {
+            background-color: black;
+            /* display: flex; */
+        }
+
+        .BAK {
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+        }
+
+        .Rain {
+            position: relative;
+            width: 120px;
+            height: 30px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 100px;
+
+        }
+
+        .Rain::before {
+            content: '';
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            top: -24px;
+            left: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 30px 0 0 20px #fff;
+        }
+
+        .s-Rain {
+            position: relative;
+            display: flex;
+            z-index: 1;
+        }
+
+        .s-Rain span {
+            position: relative;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            margin: 10px 3px;
+            border-radius: 50%;
+            animation: Rain 3s linear infinite;
+            animation-duration: calc(15s/var(--speed));
+            transform-origin: bottom;
+        }
+
+        @keyframes Rain {
+            0% {
+                transform: translateY(0);
+            }
+
+            70% {
+                transform: translateY(100px) scale(1);
+            }
+
+            100% {
+                transform: translateY(100px) scale(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="BAK">
+        <div class="Rain">
+            <div class="s-Rain">
+                <span style="--speed:11"></span>
+                <span style="--speed:12"></span>
+                <span style="--speed:18"></span>
+                <span style="--speed:16"></span>
+                <span style="--speed:20"></span>
+                <span style="--speed:11"></span>
+                <span style="--speed:14"></span>
+                <span style="--speed:17"></span>
+                <span style="--speed:18"></span>
+                <span style="--speed:12"></span>
+                <span style="--speed:14"></span>
+                <span style="--speed:19"></span>
+                <span style="--speed:15"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
